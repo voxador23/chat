@@ -12,3 +12,23 @@ body {
 form {
     background: coral;
 }
+
+.message {
+    width: 700px;
+    height: 120px;
+}
+
+.button {
+    border: none;
+    border-radius: 9px;
+    background-color: crimson;
+    color: white;
+    padding: 25px 25px;
+    font-size: 17px;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.9s ease;
+}
