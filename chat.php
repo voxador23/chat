@@ -23,10 +23,8 @@
 
   var myName = prompt("Unesi tvoje ime.")
 
-  if (myName == null) return prompt("UKUCAJ IME DEBILU")
-
   function sendMessage() {
-      var msg = document.getElementByClassName("message").value
+      var msg = document.getElementById("message").value
 
       firebase.database().ref("messages").push().set({
           "sender": myName,
@@ -60,7 +58,7 @@ firebase.database().ref("messages").on("child_removed", function (snapshot) {
 </script>
 
 <form onsubmit="return sendMessage()">
-    <input class="message" type="text" placeholder="Enter a message.">
+    <input id="message" type="text" placeholder="Enter a message.">
 
     <input class="button" type="submit">
 </form>
