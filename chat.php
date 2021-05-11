@@ -60,7 +60,7 @@ firebase.database().ref("messages").on("child_removed", function (snapshot) {
 </script>
 
 <form onsubmit="return sendMessage()">
-    <input id="message" type="text" placeholder="Enter a message.">
+    <input id="message" type="text" placeholder="Enter a kurac.">
 
     <input class="button" type="submit">
 </form>
