@@ -23,7 +23,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-  var myName = prompt("Unesi tvoje ime.")
+  var myName = prompt("Unesi tvoje ime kurca.")
 
   function sendMessage() {
       var msg = document.getElementById("message").value
